@@ -11,7 +11,7 @@ const Historical = () => {
     if (start > end || start === null || end === null) {
       alert('Please select start date and end date correctly')
     }else{
-      history.push(`/history/result?start=${start}&end=${start}`)
+      history.push(`/history/result?start=${start}&end=${end}`,{a:start,b:end})
   }
 }
 
